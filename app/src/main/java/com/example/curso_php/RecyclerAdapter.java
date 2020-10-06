@@ -17,6 +17,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import curso_basico.tema1;
+import curso_basico.tema2Activity;
+import curso_basico.tema3Activity;
+import curso_basico.tema4Activity;
+import curso_basico.tema5Activity;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
     private Context context;
@@ -54,19 +58,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      context.startActivity(iractivity1);
                  }
                  if (items.get(position).getTitulo().matches("Sintaxis básica")){
-                     Intent iractivity2 = new Intent(context,tema2Activity.class);
+                     Intent iractivity2 = new Intent(context, tema2Activity.class);
                      context.startActivity(iractivity2);
                  }
                  if (items.get(position).getTitulo().matches("Programa ''Hola Mundo'' ")){
-                     Intent iractivity3 = new Intent(context,tema3Activity.class);
+                     Intent iractivity3 = new Intent(context, tema3Activity.class);
                      context.startActivity(iractivity3);
                  }
                  if (items.get(position).getTitulo().matches("Variables")){
-                     Intent iractivity4 = new Intent(context,tema4Activity.class);
+                     Intent iractivity4 = new Intent(context, tema4Activity.class);
                      context.startActivity(iractivity4);
                  }
                  if (items.get(position).getTitulo().matches("Operadores")){
-                     Intent iractivity5 = new Intent(context,tema5Activity.class);
+                     Intent iractivity5 = new Intent(context, tema5Activity.class);
                      context.startActivity(iractivity5);
                  }
 

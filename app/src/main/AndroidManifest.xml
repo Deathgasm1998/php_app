@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".tema5Activity"></activity>
-        <activity android:name=".tema4Activity" />
-        <activity android:name=".tema3Activity" />
-        <activity android:name=".tema2Activity" />
+        <activity android:name="curso_basico.tema5Activity"></activity>
+        <activity android:name="curso_basico.tema4Activity" />
+        <activity android:name="curso_basico.tema3Activity" />
+        <activity android:name="curso_basico.tema2Activity" />
         <activity android:name="curso_avanzado.temaa_1" />
         <activity android:name="curso_intermedio.temai_1" />
         <activity android:name="curso_basico.tema1" />
