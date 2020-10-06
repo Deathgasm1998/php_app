@@ -54,8 +54,16 @@ public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.Recy
                     context.startActivity(iractivity1);
                 }
                 if (items.get(position).getTitulo().matches("Tema 2")){
-                    Intent iractivity2 = new Intent(context,temai_1.class);
+                    Intent iractivity2 = new Intent(context,tema2inActivity.class);
                     context.startActivity(iractivity2);
+                }
+                if (items.get(position).getTitulo().matches("Tema 3")){
+                    Intent iractivity3 = new Intent(context,tema3inActivity.class);
+                    context.startActivity(iractivity3);
+                }
+                if (items.get(position).getTitulo().matches("Tema 4")){
+                    Intent iractivity4 = new Intent(context,tema4inActivity.class);
+                    context.startActivity(iractivity4);
                 }
 
             }
