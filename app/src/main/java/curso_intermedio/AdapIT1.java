@@ -1,7 +1,6 @@
 package curso_intermedio;
 
 import android.content.Context;
-import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -17,14 +15,13 @@ import com.example.curso_php.R;
 
 import java.util.ArrayList;
 
-import curso_basico.AdapT1;
 import curso_basico.Tema_1;
 
 public class AdapIT1 extends RecyclerView.Adapter<AdapIT1.MyViewHolder> {
     Context context;
-    ArrayList<Temain_1> tema1s;
+    ArrayList<Tema_1> tema1s;
 
-    public AdapIT1 (Context c, ArrayList<Temain_1> tm1){
+    public AdapIT1 (Context c, ArrayList<Tema_1> tm1){
         context = c;
         tema1s = tm1;
     }
@@ -33,7 +30,7 @@ public class AdapIT1 extends RecyclerView.Adapter<AdapIT1.MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.inter_tema1,parent,false));
+        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.row_inter1,parent,false));
     }
 
     @Override

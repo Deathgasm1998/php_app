@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico;
 
 public class Tema_3 {
     private  String titulo3;

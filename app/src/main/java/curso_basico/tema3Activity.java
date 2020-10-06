@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.curso_php.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -15,46 +16,42 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import curso_basico.AdapT1;
-import curso_basico.Tema_1;
-import curso_basico.tema1;
+public class tema3Activity extends AppCompatActivity {
 
-public class tema2Activity extends AppCompatActivity {
-
-    DatabaseReference t2reference;
-    RecyclerView t2recyclerView;
-    ArrayList<Tema_2> t2list;
-    AdapT2 t2adapter;
+    DatabaseReference t3reference;
+    RecyclerView t3recyclerView;
+    ArrayList<Tema_3> t3list;
+    AdatT3 t3adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tema2);
+        setContentView(R.layout.activity_tema3);
 
-        t2recyclerView = (RecyclerView) findViewById(R.id.rvtema2);
-        t2recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        t2list = new ArrayList<Tema_2>();
+        t3recyclerView = (RecyclerView) findViewById(R.id.rvtema3);
+        t3recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        t3list = new ArrayList<Tema_3>();
 
-        t2reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema2");
-        t2reference.addValueEventListener(new ValueEventListener() {
+        t3reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema3");
+        t3reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t2list.clear();
+                t3list.clear();
 
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Tema_2 t2 = dataSnapshot1.getValue(Tema_2.class);
-                    t2list.add(t2);
+                    Tema_3 t3 = dataSnapshot1.getValue(Tema_3.class);
+                    t3list.add(t3);
                 }
-                t2adapter = new AdapT2(tema2Activity.this,t2list);
-                t2recyclerView.setAdapter(t2adapter);
-                
+                t3adapter = new AdatT3(tema3Activity.this,t3list);
+                t3recyclerView.setAdapter(t3adapter);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        }) ;
+        });
+
     }
 }

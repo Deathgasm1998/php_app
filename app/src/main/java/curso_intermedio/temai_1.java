@@ -28,14 +28,14 @@ public class temai_1 extends AppCompatActivity {
     DatabaseReference t1reference;
     RecyclerView t1recyclerView;
     ArrayList<Tema_1> t1list;
-    AdapT1 t1adapter;
+    AdapIT1 t1adapter;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_temai_1);
+        setContentView(R.layout.activity_inter1);
 
 
         t1recyclerView = (RecyclerView) findViewById(R.id.rvtema1);
@@ -53,7 +53,7 @@ public class temai_1 extends AppCompatActivity {
                     Tema_1 t1 = dataSnapshot1.getValue(Tema_1.class);
                     t1list.add(t1);
                 }
-                t1adapter = new AdapT1(temai_1.this,t1list);
+                t1adapter = new AdapIT1(temai_1.this,t1list);
                 t1recyclerView.setAdapter(t1adapter);
             }
 
