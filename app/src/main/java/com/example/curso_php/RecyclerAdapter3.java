@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import curso_avanzado.temaa_1;
-import curso_basico.tema1;
 
 public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.RecyclerHolder> {
     private Context context;
@@ -50,14 +49,14 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
             @Override
             public void onClick(View v) {
                 //itemClick.itemClick(item);
-                if (items.get(position).getTitulo().matches("Tema 1")){
+               if (items.get(position).getTitulo().matches("Tema 1")){
                     Intent iractivity1 = new Intent(context, temaa_1.class);
                     context.startActivity(iractivity1);
                 }
-                if (items.get(position).getTitulo().matches("Tema 2")){
+               /*  if (items.get(position).getTitulo().matches("Tema 2")){
                     Intent iractivity2 = new Intent(context,temaa_1.class);
                     context.startActivity(iractivity2);
-                }
+                }*/
 
             }
         });

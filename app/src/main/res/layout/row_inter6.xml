@@ -20,7 +20,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tvti5_titulo"
+                    android:id="@+id/tvti6_titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView"
@@ -28,7 +28,7 @@
                     android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/tvti5_descripcion"
+                    android:id="@+id/tvti6_descripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -36,7 +36,7 @@
                     android:textSize="15dp"/>
 
                 <ImageView
-                    android:id="@+id/imageti5"
+                    android:id="@+id/imageti6"
                     android:layout_width="235dp"
                     android:layout_height="135dp"
                     android:layout_marginLeft="50dp"

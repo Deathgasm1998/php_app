@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="@drawable/tema5"
+    android:background="@drawable/tema10"
     android:orientation="vertical"
-    tools:context="curso_basico.activitys.tema4Activity">
+    tools:context="curso_intermedio.activitys.tema6inActivity">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -25,9 +25,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
 
-        android:id="@+id/rvtema4"
+        android:id="@+id/rvtema6"
         android:layout_width="match_parent"
         android:layout_height="550dp"
-        android:layout_margin="15dp" />
+        android:layout_margin="15dp" >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

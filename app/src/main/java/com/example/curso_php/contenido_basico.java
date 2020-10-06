@@ -13,7 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import curso_basico.tema1;
+import curso_basico.activitys.tema1;
 
 public class contenido_basico extends AppCompatActivity implements RecyclerAdapter.RecyclerItemClick, SearchView.OnQueryTextListener {
 
@@ -60,10 +60,10 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("Programa ''Hola Mundo'' ", "Descripcion del tema basico 2", R.drawable.transparent_b));
         itemLists.add(new ItemList("Variables", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Operadores", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Arreglos", "Descripcion del tema a ver.", R.drawable.transparent_b));
+       /* itemLists.add(new ItemList("Arreglos", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Estructuras de control", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Funciones", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        /*
+
         itemLists.add(new ItemList("Condicional if", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));

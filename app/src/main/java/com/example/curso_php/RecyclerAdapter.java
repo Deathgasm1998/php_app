@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import curso_basico.tema1;
-import curso_basico.tema2Activity;
-import curso_basico.tema3Activity;
-import curso_basico.tema4Activity;
-import curso_basico.tema5Activity;
+import curso_basico.activitys.tema1;
+import curso_basico.activitys.tema2Activity;
+import curso_basico.activitys.tema3Activity;
+import curso_basico.activitys.tema4Activity;
+import curso_basico.activitys.tema5Activity;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
     private Context context;

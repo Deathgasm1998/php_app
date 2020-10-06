@@ -16,7 +16,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import curso_intermedio.temai_1;
+import curso_intermedio.activitys.tema2inActivity;
+import curso_intermedio.activitys.tema3inActivity;
+import curso_intermedio.activitys.tema4inActivity;
+import curso_intermedio.activitys.tema5inActivity;
+import curso_intermedio.activitys.tema6inActivity;
+import curso_intermedio.activitys.temai_1;
 
 public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.RecyclerHolder> {
     private Context context;
@@ -54,18 +59,27 @@ public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.Recy
                     context.startActivity(iractivity1);
                 }
                 if (items.get(position).getTitulo().matches("Tema 2")){
-                    Intent iractivity2 = new Intent(context,tema2inActivity.class);
+                    Intent iractivity2 = new Intent(context, tema2inActivity.class);
                     context.startActivity(iractivity2);
                 }
                 if (items.get(position).getTitulo().matches("Tema 3")){
-                    Intent iractivity3 = new Intent(context,tema3inActivity.class);
+                    Intent iractivity3 = new Intent(context, tema3inActivity.class);
                     context.startActivity(iractivity3);
                 }
                 if (items.get(position).getTitulo().matches("Tema 4")){
-                    Intent iractivity4 = new Intent(context,tema4inActivity.class);
+                    Intent iractivity4 = new Intent(context, tema4inActivity.class);
                     context.startActivity(iractivity4);
                 }
 
+                if (items.get(position).getTitulo().matches("Tema 5")){
+                    Intent iractivity5 = new Intent(context, tema5inActivity.class);
+                    context.startActivity(iractivity5);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 6")){
+                    Intent iractivity6 = new Intent(context, tema6inActivity.class);
+                    context.startActivity(iractivity6);
+                }
             }
         });
     }
