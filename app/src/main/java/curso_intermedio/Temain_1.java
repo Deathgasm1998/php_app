@@ -2,39 +2,44 @@ package curso_intermedio;
 
 public class Temain_1 {
 
-    private  String titulo;
-    private  String descripcion;
-    private  String imagen;
+    private  String titulo1i;
+    private  String descripcion1i;
+    private  String imagen1i;
     public Temain_1() {
     }
 
-    public Temain_1(String titulo, String descripcion, String imagen) {
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.imagen = imagen;
+
+    public Temain_1(String titulo1i, String descripcion1i, String imagen1i) {
+        this.titulo1i = titulo1i;
+        this.descripcion1i = descripcion1i;
+        this.imagen1i = imagen1i;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getTitulo1i() {
+        return titulo1i;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setTitulo1i(String titulo1i) {
+        this.titulo1i = titulo1i;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getDescripcion1i() {
+        return descripcion1i;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setDescripcion1i(String descripcion1i) {
+        this.descripcion1i = descripcion1i;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getImagen1i() {
+        return imagen1i;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setImagen1i(String imagen1i) {
+        this.imagen1i = imagen1i;
     }
+
+
+
+
 }

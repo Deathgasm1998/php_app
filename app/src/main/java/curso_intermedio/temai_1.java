@@ -27,7 +27,7 @@ import curso_basico.tema1;
 public class temai_1 extends AppCompatActivity {
     DatabaseReference t1reference;
     RecyclerView t1recyclerView;
-    ArrayList<Tema_1> t1list;
+    ArrayList<Temain_1> t1list;
     AdapIT1 t1adapter;
 
 
@@ -40,7 +40,7 @@ public class temai_1 extends AppCompatActivity {
 
         t1recyclerView = (RecyclerView) findViewById(R.id.rvtema1);
         t1recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        t1list = new ArrayList<Tema_1>();
+        t1list = new ArrayList<Temain_1>();
 
         t1reference = FirebaseDatabase.getInstance().getReference().child("intermedio").child("tema1");
         t1reference.addValueEventListener(new ValueEventListener() {
@@ -50,7 +50,7 @@ public class temai_1 extends AppCompatActivity {
 
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Tema_1 t1 = dataSnapshot1.getValue(Tema_1.class);
+                    Temain_1 t1 = dataSnapshot1.getValue(Temain_1.class);
                     t1list.add(t1);
                 }
                 t1adapter = new AdapIT1(temai_1.this,t1list);
