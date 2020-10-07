@@ -54,8 +54,8 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
     private List<ItemList> getItems() {
         List<ItemList> itemLists = new ArrayList<>();
         itemLists.add(new ItemList("Tema 1", "Descripcion del tema avanzado 1 ", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 2", "Descripcion del tema avanzado 2.", R.drawable.transparent_b));
-       /* itemLists.add(new ItemList("Tema 3", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        /*itemLists.add(new ItemList("Tema 2", "Descripcion del tema avanzado 2.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 3", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 4", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));

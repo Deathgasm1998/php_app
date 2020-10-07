@@ -14,7 +14,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import curso_intermedio.temai_1;
+import curso_intermedio.activitys.temai_1;
 
 
 public class contenido_intermedio extends AppCompatActivity implements RecyclerAdapter2.RecyclerItemClick, SearchView.OnQueryTextListener {
@@ -58,11 +58,11 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         List<ItemList> itemLists = new ArrayList<>();
         itemLists.add(new ItemList("Tema 1", "Descripcion del tema inter 1.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 2", "Descripcion del tema inter 2.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 4", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 5", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 3", "Descripcion del tema inter 3.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 4", "Descripcion del tema inter 4.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 5", "Descripcion del tema inter 5.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 6", "Descripcion del tema inter 6.", R.drawable.transparent_b));
         /*itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Titulo del Tema", "Descripcion del tema a ver.", R.drawable.transparent_b));
