@@ -12,4 +12,7 @@
     <item name="imageti5" type="id" />
     <item name="tvti5_titulo" type="id" />
     <item name="tvti5_descripcion" type="id" />
+    <item name="tvt6_titulo" type="id" />
+    <item name="tvt6_descripcion" type="id" />
+    <item name="imaget6" type="id" />
 </resources>
