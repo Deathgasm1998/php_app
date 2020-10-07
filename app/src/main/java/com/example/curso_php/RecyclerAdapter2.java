@@ -19,8 +19,6 @@ import java.util.stream.Collectors;
 import curso_intermedio.activitys.tema2inActivity;
 import curso_intermedio.activitys.tema3inActivity;
 import curso_intermedio.activitys.tema4inActivity;
-import curso_intermedio.activitys.tema5inActivity;
-import curso_intermedio.activitys.tema6inActivity;
 import curso_intermedio.activitys.temai_1;
 
 public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.RecyclerHolder> {
