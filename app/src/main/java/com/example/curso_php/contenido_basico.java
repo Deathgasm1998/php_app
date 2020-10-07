@@ -61,6 +61,9 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("Variables", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Operadores", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Arreglos", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 7", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 8", "Descripcion del tema a ver.", R.drawable.transparent_b));
+
         /* itemLists.add(new ItemList("Estructuras de control", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Funciones", "Descripcion del tema a ver.", R.drawable.transparent_b));
 

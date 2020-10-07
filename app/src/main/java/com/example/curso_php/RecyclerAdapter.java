@@ -21,7 +21,6 @@ import curso_basico.activitys.tema2Activity;
 import curso_basico.activitys.tema3Activity;
 import curso_basico.activitys.tema4Activity;
 import curso_basico.activitys.tema5Activity;
-import curso_basico.activitys.tema6Activity;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
     private Context context;
@@ -78,6 +77,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                  if (items.get(position).getTitulo().matches("Arreglos")){
                      Intent iractivity6 = new Intent(context, tema6Activity.class);
                      context.startActivity(iractivity6);
+                 }
+
+                 if (items.get(position).getTitulo().matches("tema 7")){
+                     Intent iractivity7 = new Intent(context, tema7Activity.class);
+                     context.startActivity(iractivity7);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 8")){
+                     Intent iractivity8 = new Intent(context, tema8Activity.class);
+                     context.startActivity(iractivity8);
                  }
 
              }
