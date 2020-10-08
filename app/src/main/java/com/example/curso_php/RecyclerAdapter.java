@@ -153,6 +153,46 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity20 = new Intent(context, tema20Activity.class);
                      context.startActivity(iractivity20);
                  }
+                 if (items.get(position).getTitulo().matches("tema 21")){
+                     Intent iractivity21 = new Intent(context, tema21Activity.class);
+                     context.startActivity(iractivity21);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 22")){
+                     Intent iractivity22 = new Intent(context, tema22Activity.class);
+                     context.startActivity(iractivity22);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 23")){
+                     Intent iractivity23 = new Intent(context, tema23Activity.class);
+                     context.startActivity(iractivity23);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 24")){
+                     Intent iractivity24 = new Intent(context, tema24Activity.class);
+                     context.startActivity(iractivity24);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 25")){
+                     Intent iractivity25 = new Intent(context, tema25Activity.class);
+                     context.startActivity(iractivity25);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 26")){
+                     Intent iractivity26 = new Intent(context, tema26Activity.class);
+                     context.startActivity(iractivity26);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 27")){
+                     Intent iractivity27 = new Intent(context, tema27Activity.class);
+                     context.startActivity(iractivity27);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 28")){
+                     Intent iractivity28 = new Intent(context, tema28Activity.class);
+                     context.startActivity(iractivity28);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 29")){
+                     Intent iractivity29 = new Intent(context, tema29Activity.class);
+                     context.startActivity(iractivity29);
+                 }
+                 if (items.get(position).getTitulo().matches("tema 30")){
+                     Intent iractivity30 = new Intent(context, tema30Activity.class);
+                     context.startActivity(iractivity30);
+                 }
              }
          });
     }

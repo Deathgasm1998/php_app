@@ -75,6 +75,18 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 25", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 26", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 27", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 28", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 29", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("tema 30", "Descripcion del tema a ver.", R.drawable.transparent_b));
+
+
 
         return itemLists;
     }
