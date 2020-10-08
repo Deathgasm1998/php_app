@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico.activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import curso_basico.adapters.AdapT12;
+import com.example.curso_php.R;
+import curso_basico.temas.Tema_12;
+import com.example.curso_php.contenido_basico;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,34 +21,36 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class tema8Activity extends AppCompatActivity {
+public class tema12Activity extends AppCompatActivity {
 
-    DatabaseReference t8reference;
-    RecyclerView t8recyclerview;
-    ArrayList<Tema_8> t8list;
-    AdapT8 t8adapter;
+    DatabaseReference t12reference;
+    RecyclerView t12recyclerView;
+    ArrayList<Tema_12> t12list;
+    AdapT12 t12adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tema8);
+        setContentView(R.layout.activity_tema12);
 
-        t8recyclerview = (RecyclerView) findViewById(R.id.rvtema8);
-        t8recyclerview.setLayoutManager(new LinearLayoutManager(this));
-        t8list = new ArrayList<Tema_8>();
 
-        t8reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema8");
-        t8reference.addValueEventListener(new ValueEventListener() {
+        t12recyclerView = (RecyclerView) findViewById(R.id.rvtema12);
+        t12recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        t12list = new ArrayList<Tema_12>();
+
+        t12reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema12");
+        t12reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t8list.clear();
+                t12list.clear();
+
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Tema_8 t8 = dataSnapshot1.getValue(Tema_8.class);
-                    t8list.add(t8);
+                    Tema_12 t12 = dataSnapshot1.getValue(Tema_12.class);
+                    t12list.add(t12);
                 }
-                t8adapter = new AdapT8(tema8Activity.this,t8list);
-                t8recyclerview.setAdapter(t8adapter);
+                t12adapter = new AdapT12(tema12Activity.this,t12list);
+                t12recyclerView.setAdapter(t12adapter);
             }
 
             @Override
@@ -53,6 +59,7 @@ public class tema8Activity extends AppCompatActivity {
             }
         });
     }
+
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_basico.class);

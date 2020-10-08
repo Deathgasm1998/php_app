@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,7 @@
     android:layout_margin="10dp"
     android:background="@drawable/tema5"
     android:orientation="vertical"
-    tools:context="curso_basico.activitys.tema6Activity">
+    tools:context="curso_basico.activitys.tema9Activity">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -25,7 +26,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
 
-        android:id="@+id/rvtema6"
+        android:id="@+id/rvtema9"
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_margin="15dp" />

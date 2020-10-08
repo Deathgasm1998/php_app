@@ -36,30 +36,30 @@ public class tema2Activity extends AppCompatActivity {
 
         t2recyclerView = (RecyclerView) findViewById(R.id.rvtema2);
         t2recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        t2list = new ArrayList<Tema_2>();
+    t2list = new ArrayList<Tema_2>();
 
-        t2reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema2");
+    t2reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema2");
         t2reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t2list.clear();
+        @Override
+        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            t2list.clear();
 
-                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
-                {
-                    Tema_2 t2 = dataSnapshot1.getValue(Tema_2.class);
-                    t2list.add(t2);
-                }
-                t2adapter = new AdapT2(tema2Activity.this,t2list);
-                t2recyclerView.setAdapter(t2adapter);
-                
+            for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
+            {
+                Tema_2 t2 = dataSnapshot1.getValue(Tema_2.class);
+                t2list.add(t2);
             }
+            t2adapter = new AdapT2(tema2Activity.this,t2list);
+            t2recyclerView.setAdapter(t2adapter);
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+        }
 
-            }
-        }) ;
-    }
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+    }) ;
+}
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void Anterior(View view) {
