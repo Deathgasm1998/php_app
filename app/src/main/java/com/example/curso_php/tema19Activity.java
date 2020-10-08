@@ -17,34 +17,36 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class tema7Activity extends AppCompatActivity {
+public class tema19Activity extends AppCompatActivity {
 
-    DatabaseReference t7reference;
-    RecyclerView t7recyclerview;
-    ArrayList<Tema_7> t7list;
-    AdapT7 t7adapter;
+    DatabaseReference t19reference;
+    RecyclerView t19recyclerView;
+    ArrayList<Tema_19> t19list;
+    AdapT19 t19adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tema7);
+        setContentView(R.layout.activity_tema19);
 
-        t7recyclerview = (RecyclerView) findViewById(R.id.rvtema7);
-        t7recyclerview.setLayoutManager(new LinearLayoutManager(this));
-        t7list = new ArrayList<Tema_7>();
 
-        t7reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema7");
-        t7reference.addValueEventListener(new ValueEventListener() {
+        t19recyclerView = (RecyclerView) findViewById(R.id.rvtema19);
+        t19recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        t19list = new ArrayList<Tema_19>();
+
+        t19reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema19");
+        t19reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t7list.clear();
+                t19list.clear();
+
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Tema_7 t7 = dataSnapshot1.getValue(Tema_7.class);
-                    t7list.add(t7);
+                    Tema_19 t19 = dataSnapshot1.getValue(Tema_19.class);
+                    t19list.add(t19);
                 }
-                t7adapter = new AdapT7(tema7Activity.this,t7list);
-                t7recyclerview.setAdapter(t7adapter);
+                t19adapter = new AdapT19(tema19Activity.this,t19list);
+                t19recyclerView.setAdapter(t19adapter);
             }
 
             @Override

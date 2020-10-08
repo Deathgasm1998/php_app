@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico.activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.curso_php.R;
+import com.example.curso_php.contenido_basico;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,41 +19,37 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import curso_intermedio.activitys.tema2inActivity;
-import curso_intermedio.adapters.AdapIT2;
-import curso_intermedio.adapters.AdapIT5;
-import curso_intermedio.temas.Temain_5;
-import curso_intermedio.temas.Temain_5;
+import curso_basico.adapters.AdapT8;
+import curso_basico.temas.Tema_8;
 
-public class tema5inActivity extends AppCompatActivity {
+public class tema8Activity extends AppCompatActivity {
 
-    DatabaseReference t5reference;
-    RecyclerView t5recyclerView;
-    ArrayList<Temain_5> t5list;
-    AdapIT5 t5adapter;
+    DatabaseReference t8reference;
+    RecyclerView t8recyclerview;
+    ArrayList<Tema_8> t8list;
+    AdapT8 t8adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inter5);
+        setContentView(R.layout.activity_tema8);
 
-        t5recyclerView = (RecyclerView) findViewById(R.id.rvitema5);
-        t5recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        t5list = new ArrayList<Temain_5>();
+        t8recyclerview = (RecyclerView) findViewById(R.id.rvtema8);
+        t8recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        t8list = new ArrayList<Tema_8>();
 
-        t5reference = FirebaseDatabase.getInstance().getReference().child("intermedio").child("tema5");
-        t5reference.addValueEventListener(new ValueEventListener() {
+        t8reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema8");
+        t8reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t5list.clear();
-
+                t8list.clear();
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Temain_5 t5 = dataSnapshot1.getValue(Temain_5.class);
-                    t5list.add(t5);
+                    Tema_8 t8 = dataSnapshot1.getValue(Tema_8.class);
+                    t8list.add(t8);
                 }
-                t5adapter = new AdapIT5(tema5inActivity.this,t5list);
-                t5recyclerView.setAdapter(t5adapter);
+                t8adapter = new AdapT8(tema8Activity.this,t8list);
+                t8recyclerview.setAdapter(t8adapter);
             }
 
             @Override
@@ -62,7 +60,7 @@ public class tema5inActivity extends AppCompatActivity {
     }
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_intermedio.class);
+        Intent anterior = new Intent(this, contenido_basico.class);
         startActivity(anterior);
         finish();
     }

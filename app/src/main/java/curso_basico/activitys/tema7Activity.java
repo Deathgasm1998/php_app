@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico.activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.curso_php.R;
+import com.example.curso_php.contenido_basico;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,34 +19,37 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class tema6Activity extends AppCompatActivity {
+import curso_basico.adapters.AdapT7;
+import curso_basico.temas.Tema_7;
 
-    DatabaseReference t6reference;
-    RecyclerView t6recyclerview;
-    ArrayList<Tema_6> t6list;
-    AdapT6 t6adapter;
+public class tema7Activity extends AppCompatActivity {
+
+    DatabaseReference t7reference;
+    RecyclerView t7recyclerview;
+    ArrayList<Tema_7> t7list;
+    AdapT7 t7adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tema6);
+        setContentView(R.layout.activity_tema7);
 
-        t6recyclerview = (RecyclerView) findViewById(R.id.rvtema6);
-        t6recyclerview.setLayoutManager(new LinearLayoutManager(this));
-        t6list = new ArrayList<Tema_6>();
+        t7recyclerview = (RecyclerView) findViewById(R.id.rvtema7);
+        t7recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        t7list = new ArrayList<Tema_7>();
 
-        t6reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema6");
-        t6reference.addValueEventListener(new ValueEventListener() {
+        t7reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema7");
+        t7reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                t6list.clear();
+                t7list.clear();
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Tema_6 t6 = dataSnapshot1.getValue(Tema_6.class);
-                    t6list.add(t6);
+                    Tema_7 t7 = dataSnapshot1.getValue(Tema_7.class);
+                    t7list.add(t7);
                 }
-                t6adapter = new AdapT6(tema6Activity.this,t6list);
-                t6recyclerview.setAdapter(t6adapter);
+                t7adapter = new AdapT7(tema7Activity.this,t7list);
+                t7recyclerview.setAdapter(t7adapter);
             }
 
             @Override
@@ -61,4 +66,3 @@ public class tema6Activity extends AppCompatActivity {
         finish();
     }
 }
-

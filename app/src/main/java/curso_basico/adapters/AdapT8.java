@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,12 +8,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.curso_php.R;
 
 import java.util.ArrayList;
+
+import curso_basico.temas.Tema_8;
 
 public class AdapT8 extends RecyclerView.Adapter<AdapT8.MyViewHolder> {
 

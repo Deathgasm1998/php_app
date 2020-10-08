@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_basico.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.curso_php.R;
 
 import java.util.ArrayList;
+
+import curso_basico.temas.Tema_7;
 
 public class AdapT7 extends RecyclerView.Adapter<AdapT7.MyViewHolder> {
 
