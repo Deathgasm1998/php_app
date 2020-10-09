@@ -66,7 +66,7 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         itemLists.add(new ItemList("Tema 8", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 9", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 10", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        /*itemLists.add(new ItemList("Tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 12", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 13", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 14", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -76,7 +76,7 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         itemLists.add(new ItemList("Tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        /* itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));

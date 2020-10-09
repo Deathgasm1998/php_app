@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_intermedio.temas;
 
 public class Temain_10{
 

@@ -32,7 +32,7 @@ public class tema8inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter8);
 
-        t8recyclerView = (RecyclerView) findViewById(R.id.rvitema8);
+        t8recyclerView = (RecyclerView) findViewById(R.id.rvtema8);
         t8recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t8list = new ArrayList<Temain_8>();
 
@@ -61,6 +61,21 @@ public class tema8inActivity extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_intermedio.class);
         startActivity(anterior);
+        finish();
+    }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema7inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema9inActivity.class);
+        startActivity(siguiente);
         finish();
     }
 }

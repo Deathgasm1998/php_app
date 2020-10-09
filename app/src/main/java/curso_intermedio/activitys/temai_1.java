@@ -20,6 +20,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import curso_basico.activitys.tema1;
+import curso_basico.activitys.tema3Activity;
 import curso_intermedio.temas.Temain_1;
 import curso_intermedio.adapters.AdapIT1;
 
@@ -67,6 +69,20 @@ public class temai_1 extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_intermedio.class);
         startActivity(anterior);
+        finish();
+    }
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   /* public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema1.class);
+        startActivity(anterior);
+        finish();
+    }*/
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema2inActivity.class);
+        startActivity(siguiente);
         finish();
     }
 }

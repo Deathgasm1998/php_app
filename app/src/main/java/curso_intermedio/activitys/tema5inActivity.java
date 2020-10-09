@@ -34,7 +34,7 @@ public class tema5inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter5);
 
-        t5recyclerView = (RecyclerView) findViewById(R.id.rvitema5);
+        t5recyclerView = (RecyclerView) findViewById(R.id.rvtema5);
         t5recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t5list = new ArrayList<Temain_5>();
 
@@ -63,6 +63,21 @@ public class tema5inActivity extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_intermedio.class);
         startActivity(anterior);
+        finish();
+    }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema4inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema6inActivity.class);
+        startActivity(siguiente);
         finish();
     }
 }

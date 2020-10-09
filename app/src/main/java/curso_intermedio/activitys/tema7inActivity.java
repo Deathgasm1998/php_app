@@ -32,7 +32,7 @@ public class tema7inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter7);
 
-        t7recyclerView = (RecyclerView) findViewById(R.id.rvitema7);
+        t7recyclerView = (RecyclerView) findViewById(R.id.rvtema7);
         t7recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t7list = new ArrayList<Temain_7>();
 
@@ -61,6 +61,21 @@ public class tema7inActivity extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_intermedio.class);
         startActivity(anterior);
+        finish();
+    }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema6inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema8inActivity.class);
+        startActivity(siguiente);
         finish();
     }
 }

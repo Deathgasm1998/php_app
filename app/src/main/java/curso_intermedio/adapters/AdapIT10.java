@@ -1,4 +1,4 @@
-package com.example.curso_php;
+package curso_intermedio.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import com.example.curso_php.R;
 
 import java.util.ArrayList;
 
-import curso_intermedio.temas.Temain_6;
+import curso_intermedio.temas.Temain_10;
 
 public class AdapIT10 extends RecyclerView.Adapter<AdapIT10.MyViewHolder> {
     Context context;

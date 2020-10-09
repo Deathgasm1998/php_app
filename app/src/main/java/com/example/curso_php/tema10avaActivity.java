@@ -19,25 +19,26 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import curso_intermedio.activitys.tema8inActivity;
 import curso_intermedio.adapters.AdapIT6;
 import curso_intermedio.temas.Temain_6;
 
-public class tema10inActivity extends AppCompatActivity {
+public class tema10avaActivity extends AppCompatActivity {
     DatabaseReference t10reference;
     RecyclerView t10recyclerView;
-    ArrayList<Temain_10> t10list;
-    AdapIT10 t10adapter;
+    ArrayList<Temava_10> t10list;
+    AdapAV10 t10adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inter10);
+        setContentView(R.layout.activity_ava10);
 
-        t10recyclerView = (RecyclerView) findViewById(R.id.rvitema10);
+        t10recyclerView = (RecyclerView) findViewById(R.id.rvtema10);
         t10recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        t10list = new ArrayList<Temain_10>();
+        t10list = new ArrayList<Temava_10>();
 
-        t10reference = FirebaseDatabase.getInstance().getReference().child("intermedio").child("tema10");
+        t10reference = FirebaseDatabase.getInstance().getReference().child("avanzado").child("tema10");
         t10reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -45,10 +46,10 @@ public class tema10inActivity extends AppCompatActivity {
 
                 for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren())
                 {
-                    Temain_10 t10 = dataSnapshot1.getValue(Temain_10.class);
+                    Temava_10 t10 = dataSnapshot1.getValue(Temava_10.class);
                     t10list.add(t10);
                 }
-                t10adapter = new AdapIT10(tema10inActivity.this,t10list);
+                t10adapter = new AdapAV10(tema10avaActivity.this,t10list);
                 t10recyclerView.setAdapter(t10adapter);
             }
 
@@ -60,8 +61,24 @@ public class tema10inActivity extends AppCompatActivity {
     }
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_intermedio.class);
+        Intent anterior = new Intent(this, contenido_avanzado.class);
         startActivity(anterior);
         finish();
     }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema9avaActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    /*public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema5avaActivity.class);
+        startActivity(siguiente);
+        finish();
+    }*/
+
 }

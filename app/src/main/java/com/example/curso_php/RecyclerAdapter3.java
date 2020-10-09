@@ -16,6 +16,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import curso_intermedio.activitys.tema10inActivity;
+import curso_intermedio.activitys.tema2inActivity;
+import curso_intermedio.activitys.tema3inActivity;
+import curso_intermedio.activitys.tema4inActivity;
+import curso_intermedio.activitys.tema5inActivity;
+import curso_intermedio.activitys.tema6inActivity;
+import curso_intermedio.activitys.tema7inActivity;
+import curso_intermedio.activitys.tema8inActivity;
+import curso_intermedio.activitys.tema9inActivity;
+
 public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.RecyclerHolder> {
     private Context context;
     private List<ItemList> items;
@@ -51,10 +61,47 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
                     Intent iractivity1 = new Intent(context, tema1avaActivity.class);
                     context.startActivity(iractivity1);
                 }
-               /*  if (items.get(position).getTitulo().matches("Tema 2")){
-                    Intent iractivity2 = new Intent(context,temaa_1.class);
+
+                if (items.get(position).getTitulo().matches("Tema 2")){
+                    Intent iractivity2 = new Intent(context, tema2avaActivity.class);
                     context.startActivity(iractivity2);
-                }*/
+                }
+                if (items.get(position).getTitulo().matches("Tema 3")){
+                    Intent iractivity3 = new Intent(context, tema3avaActivity.class);
+                    context.startActivity(iractivity3);
+                }
+                if (items.get(position).getTitulo().matches("Tema 4")){
+                    Intent iractivity4 = new Intent(context, tema4avaActivity.class);
+                    context.startActivity(iractivity4);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 5")){
+                    Intent iractivity5 = new Intent(context, tema5avaActivity.class);
+                    context.startActivity(iractivity5);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 6")){
+                    Intent iractivity6 = new Intent(context, tema6avaActivity.class);
+                    context.startActivity(iractivity6);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 7")){
+                    Intent iractivity7 = new Intent(context, tema7avaActivity.class);
+                    context.startActivity(iractivity7);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 8")){
+                    Intent iractivity8 = new Intent(context, tema8avaActivity.class);
+                    context.startActivity(iractivity8);
+                }
+                if (items.get(position).getTitulo().matches("Tema 9")){
+                    Intent iractivity9 = new Intent(context, tema9avaActivity.class);
+                    context.startActivity(iractivity9);
+                }
+                if (items.get(position).getTitulo().matches("Tema 10")){
+                    Intent iractivity10 = new Intent(context, tema10avaActivity.class);
+                    context.startActivity(iractivity10);
+                }
 
             }
         });

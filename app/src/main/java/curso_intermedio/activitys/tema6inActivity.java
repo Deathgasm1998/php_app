@@ -33,7 +33,7 @@ public class tema6inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter6);
 
-        t6recyclerView = (RecyclerView) findViewById(R.id.rvitema6);
+        t6recyclerView = (RecyclerView) findViewById(R.id.rvtema6);
         t6recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t6list = new ArrayList<Temain_6>();
 
@@ -62,6 +62,21 @@ public class tema6inActivity extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, contenido_intermedio.class);
         startActivity(anterior);
+        finish();
+    }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema5inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema7inActivity.class);
+        startActivity(siguiente);
         finish();
     }
 }

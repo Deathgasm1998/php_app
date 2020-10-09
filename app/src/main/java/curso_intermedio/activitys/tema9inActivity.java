@@ -32,7 +32,7 @@ public class tema9inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter9);
 
-        t9recyclerView = (RecyclerView) findViewById(R.id.rvitema9);
+        t9recyclerView = (RecyclerView) findViewById(R.id.rvtema9);
         t9recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t9list = new ArrayList<Temain_9>();
 
@@ -63,4 +63,20 @@ public class tema9inActivity extends AppCompatActivity {
         startActivity(anterior);
         finish();
     }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema8inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema10inActivity.class);
+        startActivity(siguiente);
+        finish();
+    }
+
 }

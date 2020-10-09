@@ -65,4 +65,19 @@ public class tema4inActivity extends AppCompatActivity {
         startActivity(anterior);
         finish();
     }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void ant_tema(View view) {
+        Intent anterior = new Intent(this, tema3inActivity.class);
+        startActivity(anterior);
+        finish();
+    }
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema5inActivity.class);
+        startActivity(siguiente);
+        finish();
+    }
 }

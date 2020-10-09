@@ -61,9 +61,9 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("variables", "Tipos de variables y como se definen.", R.drawable.transparent_b));
         itemLists.add(new ItemList("eco y print", "Se da a conocer para que sirven estas funciones", R.drawable.transparent_b));
         itemLists.add(new ItemList("tipos de datos", "Se definen los datos que puede almacenar una variable", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 7", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 8", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 9", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("strings", "conocerás el uso de string en php.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("constantes", "conocerás el uso de constantes y como se declaran.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("sentencias if/if-else", "Uso de condicionales if y if-else", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 10", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 12", "Descripcion del tema a ver.", R.drawable.transparent_b));
