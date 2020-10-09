@@ -78,28 +78,28 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
              @Override
              public void onClick(View v) {
                  //itemClick.itemClick(item);
-                 if (items.get(position).getTitulo().matches("Introducción")){
+                 if (items.get(position).getTitulo().matches("introducción")){
                      Intent iractivity1 = new Intent(context, tema1.class);
                      context.startActivity(iractivity1);
                  }
-                 if (items.get(position).getTitulo().matches("Sintaxis básica")){
+                 if (items.get(position).getTitulo().matches("sintaxis básica")){
                      Intent iractivity2 = new Intent(context, tema2Activity.class);
                      context.startActivity(iractivity2);
                  }
-                 if (items.get(position).getTitulo().matches("Estándares de Codificación")){
+                 if (items.get(position).getTitulo().matches("estándares de codificación")){
                      Intent iractivity3 = new Intent(context, tema3Activity.class);
                      context.startActivity(iractivity3);
                  }
-                 if (items.get(position).getTitulo().matches("Variables")){
+                 if (items.get(position).getTitulo().matches("variables")){
                      Intent iractivity4 = new Intent(context, tema4Activity.class);
                      context.startActivity(iractivity4);
                  }
-                 if (items.get(position).getTitulo().matches("Eco y Print")){
+                 if (items.get(position).getTitulo().matches("eco y print")){
                      Intent iractivity5 = new Intent(context, tema5Activity.class);
                      context.startActivity(iractivity5);
                  }
 
-                 if (items.get(position).getTitulo().matches("Tipos de datos")){
+                 if (items.get(position).getTitulo().matches("tipos de datos")){
                      Intent iractivity6 = new Intent(context, tema6Activity.class);
                      context.startActivity(iractivity6);
                  }
