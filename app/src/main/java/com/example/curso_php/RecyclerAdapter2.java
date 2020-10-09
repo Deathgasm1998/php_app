@@ -21,6 +21,9 @@ import curso_intermedio.activitys.tema3inActivity;
 import curso_intermedio.activitys.tema4inActivity;
 import curso_intermedio.activitys.tema5inActivity;
 import curso_intermedio.activitys.tema6inActivity;
+import curso_intermedio.activitys.tema7inActivity;
+import curso_intermedio.activitys.tema8inActivity;
+import curso_intermedio.activitys.tema9inActivity;
 import curso_intermedio.activitys.temai_1;
 
 public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.RecyclerHolder> {
@@ -79,6 +82,24 @@ public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.Recy
                 if (items.get(position).getTitulo().matches("Tema 6")){
                     Intent iractivity6 = new Intent(context, tema6inActivity.class);
                     context.startActivity(iractivity6);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 7")){
+                    Intent iractivity7 = new Intent(context, tema7inActivity.class);
+                    context.startActivity(iractivity7);
+                }
+
+                if (items.get(position).getTitulo().matches("Tema 8")){
+                    Intent iractivity8 = new Intent(context, tema8inActivity.class);
+                    context.startActivity(iractivity8);
+                }
+                if (items.get(position).getTitulo().matches("Tema 9")){
+                    Intent iractivity9 = new Intent(context, tema9inActivity.class);
+                    context.startActivity(iractivity9);
+                }
+                if (items.get(position).getTitulo().matches("Tema 10")){
+                    Intent iractivity10 = new Intent(context, tema10inActivity.class);
+                    context.startActivity(iractivity10);
                 }
             }
         });

@@ -56,11 +56,11 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
     private List<ItemList> getItems() {
         List<ItemList> itemLists = new ArrayList<>();
         itemLists.add(new ItemList("Introducción", "¿Qué es php?...", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Sintaxis básica", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Programa ''Hola Mundo'' ", "Descripcion del tema basico 2", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Variables", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Operadores", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Arreglos", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Sintaxis básica", "Se definen la sintaxis del lenguaje PHP", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Estándares de Codificación", "El conjunto de reglas para su codificación", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Variables", "Tipos de variables y como se definen.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Eco y Print", "Se da a conocer para que sirven estas funciones", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tipos de datos", "Se definen los datos que puede almacenar una variable", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 7", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 8", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 9", "Descripcion del tema a ver.", R.drawable.transparent_b));

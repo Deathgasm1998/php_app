@@ -13,8 +13,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import curso_avanzado.temaa_1;
-
 public class contenido_avanzado extends AppCompatActivity implements RecyclerAdapter3.RecyclerItemClick, SearchView.OnQueryTextListener {
 
     private RecyclerView rvLista;
@@ -73,7 +71,7 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
 
     @Override
     public void itemClick(ItemList item) {
-        Intent intent = new Intent(this, temaa_1.class);
+        Intent intent = new Intent(this, tema1avaActivity.class);
         startActivity(intent);
     }
 

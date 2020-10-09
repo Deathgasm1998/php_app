@@ -33,12 +33,12 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:text="TextView"
-                    android:textSize="15dp"/>
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/imaget2"
-                    android:layout_width="235dp"
-                    android:layout_height="135dp"
+                    android:layout_width="278dp"
+                    android:layout_height="140dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="5dp" />
             </LinearLayout>

@@ -8,7 +8,7 @@
     android:layout_margin="10dp"
     android:background="@drawable/tema5"
     android:orientation="vertical"
-    tools:context=".tema20Activity">
+    tools:context="curso_basico.activitys.tema20Activity">
 
     <ImageView
         android:id="@+id/imageView9"

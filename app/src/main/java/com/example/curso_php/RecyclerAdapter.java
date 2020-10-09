@@ -23,7 +23,22 @@ import curso_basico.activitys.tema12Activity;
 import curso_basico.activitys.tema13Activity;
 import curso_basico.activitys.tema14Activity;
 import curso_basico.activitys.tema15Activity;
+import curso_basico.activitys.tema16Activity;
+import curso_basico.activitys.tema17Activity;
+import curso_basico.activitys.tema18Activity;
+import curso_basico.activitys.tema19Activity;
+import curso_basico.activitys.tema20Activity;
+import curso_basico.activitys.tema21Activity;
+import curso_basico.activitys.tema22Activity;
+import curso_basico.activitys.tema23Activity;
+import curso_basico.activitys.tema24Activity;
+import curso_basico.activitys.tema25Activity;
+import curso_basico.activitys.tema26Activity;
+import curso_basico.activitys.tema27Activity;
+import curso_basico.activitys.tema28Activity;
+import curso_basico.activitys.tema29Activity;
 import curso_basico.activitys.tema2Activity;
+import curso_basico.activitys.tema30Activity;
 import curso_basico.activitys.tema3Activity;
 import curso_basico.activitys.tema4Activity;
 import curso_basico.activitys.tema5Activity;
@@ -71,7 +86,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity2 = new Intent(context, tema2Activity.class);
                      context.startActivity(iractivity2);
                  }
-                 if (items.get(position).getTitulo().matches("Programa ''Hola Mundo'' ")){
+                 if (items.get(position).getTitulo().matches("Estándares de Codificación")){
                      Intent iractivity3 = new Intent(context, tema3Activity.class);
                      context.startActivity(iractivity3);
                  }
@@ -79,12 +94,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity4 = new Intent(context, tema4Activity.class);
                      context.startActivity(iractivity4);
                  }
-                 if (items.get(position).getTitulo().matches("Operadores")){
+                 if (items.get(position).getTitulo().matches("Eco y Print")){
                      Intent iractivity5 = new Intent(context, tema5Activity.class);
                      context.startActivity(iractivity5);
                  }
 
-                 if (items.get(position).getTitulo().matches("Arreglos")){
+                 if (items.get(position).getTitulo().matches("Tipos de datos")){
                      Intent iractivity6 = new Intent(context, tema6Activity.class);
                      context.startActivity(iractivity6);
                  }

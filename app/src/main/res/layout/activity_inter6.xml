@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:background="@drawable/tema10"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="curso_intermedio.activitys.tema6inActivity">
 
     <ImageView
         android:id="@+id/imageView9"

@@ -37,8 +37,8 @@
 
                 <ImageView
                     android:id="@+id/imaget3"
-                    android:layout_width="235dp"
-                    android:layout_height="135dp"
+                    android:layout_width="339dp"
+                    android:layout_height="155dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="5dp" />
             </LinearLayout>
