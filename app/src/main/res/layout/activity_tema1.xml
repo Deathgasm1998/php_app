@@ -46,5 +46,4 @@
         app:srcCompat="@drawable/sig" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
