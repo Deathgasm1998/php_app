@@ -98,13 +98,6 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         startActivity(intent);
     }
 
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, Curso.class);
-        startActivity(anterior);
-        finish();
-    }
-
 
     @Override
     public boolean onQueryTextSubmit(String query) {
@@ -115,6 +108,22 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
     public boolean onQueryTextChange(String newText) {
         adapter.filter(newText);
         return false;
+    }
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    public void Anterior(View view) {
+        Intent anterior = new Intent(this, Curso.class);
+        startActivity(anterior);
+        finish();
+    }
+
+
+    //--------------------------------------------------------------------------
+    public void Multimedia(View view) {
+        Intent multimedia = new Intent(this, multi2.class);
+        startActivity(multimedia);
+        finish();
     }
 }
 

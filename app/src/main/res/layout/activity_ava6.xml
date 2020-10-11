@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context=".tema6avaActivity">
+    tools:context="curso_avanzado.activitys.tema6avaActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvtema6"

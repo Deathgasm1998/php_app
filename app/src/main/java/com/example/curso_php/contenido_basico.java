@@ -116,6 +116,13 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         finish();
     }
 
+    //--------------------------------------------------------------------------
+    public void Multimedia(View view) {
+        Intent multimedia = new Intent(this, multi1.class);
+        startActivity(multimedia);
+        finish();
+    }
+
 }
 
 

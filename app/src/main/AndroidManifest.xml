@@ -3,6 +3,7 @@
     package="com.example.curso_php">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,15 +12,28 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".tema10avaActivity"></activity>
-        <activity android:name=".tema9avaActivity" />
-        <activity android:name=".tema8avaActivity" />
-        <activity android:name=".tema7avaActivity" />
-        <activity android:name=".tema6avaActivity" />
-        <activity android:name=".tema5avaActivity" />
-        <activity android:name=".tema4avaActivity" />
-        <activity android:name=".tema3avaActivity" />
-        <activity android:name=".tema2avaActivity" />
+        <activity android:name=".tema11avaActivity"></activity>
+        <activity android:name=".multi3" />
+        <activity android:name=".multi2" />
+        <activity android:name=".tema20avaActivity" />
+        <activity android:name=".tema19avaActivity" />
+        <activity android:name=".tema18avaActivity" />
+        <activity android:name=".tema17avaActivity" />
+        <activity android:name=".tema16avaActivity" />
+        <activity android:name=".tema15avaActivity" />
+        <activity android:name=".tema14avaActivity" />
+        <activity android:name=".tema13avaActivity" />
+        <activity android:name=".tema12avaActivity" />
+        <activity android:name=".multi1" />
+        <activity android:name=".tema10avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema9avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema8avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema7avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema6avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema5avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema4avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema3avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema2avaActivity" />
         <activity android:name="curso_intermedio.activitys.tema20inActivity" />
         <activity android:name="curso_intermedio.activitys.tema19inActivity" />
         <activity android:name="curso_intermedio.activitys.tema18inActivity" />
@@ -30,7 +44,7 @@
         <activity android:name="curso_intermedio.activitys.tema13inActivity" />
         <activity android:name="curso_intermedio.activitys.tema12inActivity" />
         <activity android:name="curso_intermedio.activitys.tema11inActivity" />
-        <activity android:name=".tema1avaActivity" />
+        <activity android:name="curso_avanzado.activitys.tema1avaActivity" />
         <activity android:name="curso_intermedio.activitys.tema10inActivity" />
         <activity android:name="curso_intermedio.activitys.tema9inActivity" />
         <activity android:name="curso_intermedio.activitys.tema8inActivity" />

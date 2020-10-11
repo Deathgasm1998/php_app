@@ -9,8 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.curso_php.R;
-import com.example.curso_php.contenido_intermedio;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,9 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import curso_intermedio.activitys.tema8inActivity;
-import curso_intermedio.adapters.AdapIT6;
-import curso_intermedio.temas.Temain_6;
+import curso_avanzado.activitys.tema9avaActivity;
 
 public class tema10avaActivity extends AppCompatActivity {
     DatabaseReference t10reference;
@@ -75,10 +71,10 @@ public class tema10avaActivity extends AppCompatActivity {
     }
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    /*public void sig_tema(View view) {
-        Intent siguiente = new Intent(this, tema5avaActivity.class);
+    public void sig_tema(View view) {
+        Intent siguiente = new Intent(this, tema11avaActivity.class);
         startActivity(siguiente);
         finish();
-    }*/
+    }
 
 }

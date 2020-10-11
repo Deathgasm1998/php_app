@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import pl.droidsonroids.gif.GifImageView;
 
 public class SplashActivity extends Activity {
-    private final int DURACION_SPLASH = 2000;
+    private final int DURACION_SPLASH = 3000;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -36,7 +36,7 @@ public class tema2Activity extends AppCompatActivity {
 
         t2recyclerView = (RecyclerView) findViewById(R.id.rvtema2);
         t2recyclerView.setLayoutManager(new LinearLayoutManager(this));
-    t2list = new ArrayList<Tema_2>();
+       t2list = new ArrayList<Tema_2>();
 
     t2reference = FirebaseDatabase.getInstance().getReference().child("basico").child("tema2");
         t2reference.addValueEventListener(new ValueEventListener() {

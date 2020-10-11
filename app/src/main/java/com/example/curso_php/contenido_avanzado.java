@@ -13,6 +13,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import curso_avanzado.activitys.tema1avaActivity;
+
 public class contenido_avanzado extends AppCompatActivity implements RecyclerAdapter3.RecyclerItemClick, SearchView.OnQueryTextListener {
 
     private RecyclerView rvLista;
@@ -61,7 +63,7 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
         itemLists.add(new ItemList("Tema 8", "Descripcion del tema 8.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 9", "Descripcion del tema 9.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 10", "Descripcion del tema 10.", R.drawable.transparent_b));
-        /* itemLists.add(new ItemList("Tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("Tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 12", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 13", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 14", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -71,7 +73,7 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
         itemLists.add(new ItemList("Tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
+         /* itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -94,16 +96,6 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
     }
 
 
-
-
-    //--------------------------------------------------------------------------
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, Curso.class);
-        startActivity(anterior);
-        finish();
-    }
-
-
     @Override
     public boolean onQueryTextSubmit(String query) {
         return false;
@@ -113,5 +105,20 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
     public boolean onQueryTextChange(String newText) {
         adapter.filter(newText);
         return false;
+    }
+
+    //--------------------------------------------------------------------------
+    public void Anterior(View view) {
+        Intent anterior = new Intent(this, Curso.class);
+        startActivity(anterior);
+        finish();
+    }
+
+
+    //--------------------------------------------------------------------------
+    public void Multimedia(View view) {
+        Intent multimedia = new Intent(this, multi3.class);
+        startActivity(multimedia);
+        finish();
     }
 }
