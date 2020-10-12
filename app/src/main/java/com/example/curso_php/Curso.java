@@ -39,4 +39,11 @@ public class Curso extends AppCompatActivity {
         startActivity(anterior);
         finish();
     }
+
+
+    public void logo(View view) {
+        Intent logo= new Intent(this, MainActivity.class);
+        startActivity(logo);
+        finish();
+    }
 }

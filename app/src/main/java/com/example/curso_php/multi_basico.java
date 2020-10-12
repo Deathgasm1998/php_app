@@ -54,24 +54,24 @@ public class multi_basico extends AppCompatActivity {
         finish();
     }
 
-   /* //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi1.class);
-        startActivity(multimedia);
+    //--------------------------------------------------------------------------
+    public void Multimedia4(View view) {
+        Intent multimedia4 = new Intent(this, multi4.class);
+        startActivity(multimedia4);
         finish();
     }
 
     //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi1.class);
-        startActivity(multimedia);
+    public void Multimedia5(View view) {
+        Intent multimedia5 = new Intent(this, multi5.class);
+        startActivity(multimedia5);
         finish();
     }
 
     //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi1.class);
-        startActivity(multimedia);
+    public void Multimedia6(View view) {
+        Intent multimedia6 = new Intent(this, multi6.class);
+        startActivity(multimedia6);
         finish();
-    }*/
+    }
 }
