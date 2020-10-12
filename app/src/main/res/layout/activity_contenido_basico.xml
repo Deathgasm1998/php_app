@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/curso">
+    android:background="@drawable/curso"
+    tools:context=".contenido_basico">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/svSearch"
@@ -43,6 +44,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLista"
+
         android:layout_width="250dp"
         android:layout_height="300dp"
         android:layout_marginBottom="36dp"

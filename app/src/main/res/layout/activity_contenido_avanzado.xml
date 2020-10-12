@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/curso">
+    android:background="@drawable/curso"
+    tools:context=".contenido_avanzado">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/svSearch"
