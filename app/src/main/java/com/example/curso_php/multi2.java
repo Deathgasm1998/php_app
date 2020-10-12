@@ -34,7 +34,7 @@ public class multi2 extends AppCompatActivity {
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void ant_tema(View view) {
-        Intent anterior = new Intent(this, contenido_intermedio.class);
+        Intent anterior = new Intent(this, multi_basico.class);
         startActivity(anterior);
         finish();
     }

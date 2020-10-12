@@ -119,10 +119,11 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
     }
 
 
+
     //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi2.class);
-        startActivity(multimedia);
+    public void playlist(View view) {
+        Intent playlist = new Intent(this, multi_intermedio.class);
+        startActivity(playlist);
         finish();
     }
 }

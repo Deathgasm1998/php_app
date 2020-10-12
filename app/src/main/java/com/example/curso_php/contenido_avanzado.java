@@ -115,10 +115,11 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
     }
 
 
+
     //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi3.class);
-        startActivity(multimedia);
+    public void playlist(View view) {
+        Intent playlist = new Intent(this, multi_avanzado.class);
+        startActivity(playlist);
         finish();
     }
 }

@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".tema11avaActivity"></activity>
+        <activity android:name=".multi_avanzado"></activity>
+        <activity android:name=".multi_intermedio" />
+        <activity android:name=".multi_basico" />
+        <activity android:name=".tema11avaActivity" />
         <activity android:name=".multi3" />
         <activity android:name=".multi2" />
         <activity android:name=".tema20avaActivity" />
