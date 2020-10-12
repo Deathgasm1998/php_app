@@ -31,7 +31,11 @@ public class multi_basico extends AppCompatActivity {
     }
 
 
-
+    public void logo(View view) {
+        Intent logo= new Intent(this, MainActivity.class);
+        startActivity(logo);
+        finish();
+    }
 
     //--------------------------------------------------------------------------
     //--------------------------------------------------------------------------

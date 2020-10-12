@@ -7,6 +7,31 @@
     android:background="@drawable/login2"
     tools:context=".multi_intermedio">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_bar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#EDDADA"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo_ava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/mini_logo" />
 
     <Button
         android:id="@+id/boton_curso"
@@ -48,6 +73,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia"
         android:text="video1"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,6 +88,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia2"
         android:text="video2"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,6 +103,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia3"
         android:text="video3"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,6 +118,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia4"
         android:text="video4"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,6 +133,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia5"
         android:text="video5"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,6 +148,7 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
+        android:onClick="Multimedia6"
         android:text="video6"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
