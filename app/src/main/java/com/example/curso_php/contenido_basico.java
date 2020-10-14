@@ -56,19 +56,19 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
     private List<ItemList> getItems() {
         List<ItemList> itemLists = new ArrayList<>();
         itemLists.add(new ItemList("introducción", "¿Qué es php?...", R.drawable.transparent_b));
-        itemLists.add(new ItemList("sintaxis básica", "Se definen la sintaxis del lenguaje PHP", R.drawable.transparent_b));
         itemLists.add(new ItemList("estándares de codificación", "El conjunto de reglas para su codificación", R.drawable.transparent_b));
+        itemLists.add(new ItemList("sintaxis básica", "Se definen la sintaxis del lenguaje PHP", R.drawable.transparent_b));
         itemLists.add(new ItemList("variables", "Tipos de variables y como se definen.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("eco y print", "Se da a conocer para que sirven estas funciones", R.drawable.transparent_b));
+        itemLists.add(new ItemList("echo y print", "Se da a conocer para que sirven estas funciones", R.drawable.transparent_b));
         itemLists.add(new ItemList("tipos de datos", "Se definen los datos que puede almacenar una variable", R.drawable.transparent_b));
         itemLists.add(new ItemList("strings", "conocerás el uso de string en php.", R.drawable.transparent_b));
         itemLists.add(new ItemList("constantes", "conocerás el uso de constantes y como se declaran.", R.drawable.transparent_b));
         itemLists.add(new ItemList("sentencias if/if-else", "Uso de condicionales if y if-else", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 10", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 12", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 13", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 14", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("bucles", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("constantes mágicas", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("métodos get y post", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("superglobales", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("funciones", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 15", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 16", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 17", "Descripcion del tema a ver.", R.drawable.transparent_b));

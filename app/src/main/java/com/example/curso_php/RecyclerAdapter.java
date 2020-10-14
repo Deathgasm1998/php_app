@@ -82,11 +82,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity1 = new Intent(context, tema1.class);
                      context.startActivity(iractivity1);
                  }
-                 if (items.get(position).getTitulo().matches("sintaxis básica")){
+                 if (items.get(position).getTitulo().matches("estándares de codificación")){
                      Intent iractivity2 = new Intent(context, tema2Activity.class);
                      context.startActivity(iractivity2);
                  }
-                 if (items.get(position).getTitulo().matches("estándares de codificación")){
+                 if (items.get(position).getTitulo().matches("sintaxis básica")){
                      Intent iractivity3 = new Intent(context, tema3Activity.class);
                      context.startActivity(iractivity3);
                  }
@@ -94,7 +94,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity4 = new Intent(context, tema4Activity.class);
                      context.startActivity(iractivity4);
                  }
-                 if (items.get(position).getTitulo().matches("eco y print")){
+                 if (items.get(position).getTitulo().matches("echo y print")){
                      Intent iractivity5 = new Intent(context, tema5Activity.class);
                      context.startActivity(iractivity5);
                  }
@@ -118,26 +118,26 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      context.startActivity(iractivity9);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 10")){
+                 if (items.get(position).getTitulo().matches("bucles")){
                      Intent iractivity10 = new Intent(context, tema10Activity.class);
                      context.startActivity(iractivity10);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 11")){
+                 if (items.get(position).getTitulo().matches("constantes mágicas")){
                      Intent iractivity11 = new Intent(context, tema11Activity.class);
                      context.startActivity(iractivity11);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 12")){
+                 if (items.get(position).getTitulo().matches("métodos get y post")){
                      Intent iractivity12 = new Intent(context, tema12Activity.class);
                      context.startActivity(iractivity12);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 13")){
+                 if (items.get(position).getTitulo().matches("superglobales")){
                      Intent iractivity13 = new Intent(context, tema13Activity.class);
                      context.startActivity(iractivity13);
                  }
-                 if (items.get(position).getTitulo().matches("tema 14")){
+                 if (items.get(position).getTitulo().matches("funciones")){
                      Intent iractivity14 = new Intent(context, tema14Activity.class);
                      context.startActivity(iractivity14);
                  }

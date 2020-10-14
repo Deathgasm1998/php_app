@@ -9,9 +9,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvtema4"
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:background="@drawable/tema7"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/tema4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
